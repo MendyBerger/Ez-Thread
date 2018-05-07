@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    <script src="./newThread.js"></script>
+    <script>
+            
+        class SomeClass {
+            constructor(){
+                this.someProperty = 100;
+            }
+        }
+        
+        (async () => {
+            
+            let someObject = new SomeClass();
+            let foo = 10;
+            let bar = {
+                baz: 50,
+                qux: new Set()
+            };
+
+            let returnedValue = await newThread(() => {
+                return someObject.someProperty + foo + bar.baz;
+            }, {someObject, foo, bar});
+
+            console.log(returnedValue);
+
+        })();
+
+    </script>
+</html>
