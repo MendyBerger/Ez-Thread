@@ -1,0 +1,18 @@
+{
+  "name": "ez-thread",
+  "version": "0.1.0",
+  "description": "Easily create new threads, and pass in functions to execute.",
+  "main": "newThread.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Mendy Berger"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MendyBerger/Ez-Thread.git"
+  }
+}
